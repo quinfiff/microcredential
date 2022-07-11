@@ -26,7 +26,7 @@
 /*images*/
 .img_container{
   border:solid 1px red; width:90%; margin:auto; margin-top: 2em;}
-
+.image1, .image2, .image3,.image4{width: 45; margin: 2%}
 .row1, .row2{border: solid green;}
 .image1{border-radius: 20px; width: 30%;}
 .image2{border-radius:50%; width: 30%;}
