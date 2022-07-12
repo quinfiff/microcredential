@@ -1,0 +1,43 @@
+.star1,.star2,.star3,.star4,.star5,.star6,.star7,.star8,.star9,.star10,.star11,.star12{position: absolute;}
+.star1{opacity: 0;width: 2%;top: 6%; left: 56%; animation: moveStar 3s infinite 7.2s;}
+.star2{opacity: 0;width: 3%;top: 8%; left: 71%; animation: moveStar 3s infinite 8.3s;}
+.star3{opacity: 0;width: 5%;top: 10%; left: 9%; animation: moveStar 3s infinite 7.5s;}
+.star4{opacity: 0;width: 4%;top: 12%; left: 30%; animation: moveStar 3s infinite 8.7s;}
+.star5{opacity: 0;width: 7%;top: 14%; left: 15%; animation: moveStar 3s infinite 6.4s;}
+.star6{opacity: 0;width: 8%;top: 70%; left: 22%; animation: moveStar 3s infinite 6.6s;}
+.star7{opacity: 0;width: 9%;top: 18%; left: 55%; animation: moveStar 5s infinite 8.2s;}
+.star8{opacity: 0;width: 9%;top: 20%; left: 68%; animation: moveStar 5s infinite 7.15s;}
+.star9{opacity: 0;width: 11%;top: 22%; left: 5%; animation: moveStar 5s infinite 8.67s;}
+.star10{opacity: 0; width: 12%;top: 64%; left: 55%; animation: moveStar 5s infinite 6.1s;}
+.star11{opacity: 0;width: 6%;top: 40%; left: 19%; animation: moveStar 5s infinite 7.6s;}
+.star12{opacity: 0;width: 4%;top: 35%; left: 68%; animation: moveStar 5s infinite 6.4s;}
+@keyframes moveStar {
+  0%{opacity: 0.2;}
+  20%{opacity:0.4;}
+  40%{opacity:0.6;}
+  60%{opacity:1;}
+  80%{opacity:0.7;}
+  100%{opacity:1;}
+}
+.animation_p{ position:absolute;top:30%;bottom:20%;Text-align:center;background-color: transparent; color: transparent; left:2%;right:10%;font-size: 2em; font-family: monospace; font-weight: lighter; animation: zoomTxt 6s linear; animation-iteration-count: 1;}
+@keyframes zoomTxt {
+  0%{transform:rotate(-6deg); ; color:white; text-shadow: 5px 5px 2px black;}
+  40%{transform: rotate(0deg);color:lightblue;text-shadow: 5px 5px 2px black;}
+  80%{transform: rotate(6deg);color:rgb(164,66,220);text-shadow: 5px 5px 2px black;}
+  100%{transform:rotate(-6deg); ; color:white; text-shadow: 5px 5px 2px black;}
+}
+.city{width:85%; animation: filCity 2s ease-in-out 0s 1}
+@keyframes filCity {
+  0%{filter: invert(0%);}
+  50%{filter: invert(100%);
+  100%{filter: invert(0%);}}
+}
+.night{position:absolute;top:50%;bottom:50%; left:50%;right:50%; animation: moveNight 4s; opacity: 0;}
+@keyframes moveNight {
+  0%{opacity: 1; transform: scale(1.5);}
+  20%{opacity:0.8;}
+  40%{opacity:0.7;}
+  60%{opacity:0.5;}
+  80%{opacity:0.3; transform: scale(1);}
+  100%{opacity:0;}
+}
