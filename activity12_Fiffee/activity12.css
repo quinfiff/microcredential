@@ -1,0 +1,147 @@
+
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth}
+/*forms*/
+.input1:hoverr{background-color: darkgrey; color: red; box-shadow: 0px 0px 2px grey; border-radius: 12px; padding: 0.2em 1em;}
+  /* slideshow*/
+.container_slideshow{
+  border: solid red;
+  width: 80%;
+margin: 2em auto;
+  position: relative;
+}
+.slide, .slideAuto{
+  width:100%;
+  display: none;
+animation : slideAnimation: 1s;}
+@keyframes slideAnimation {
+  0%{transform: translateX(50px); }
+  100%{transform: translateX(0px);}
+}
+.slide img, .slideAuto img{
+  width: 100%;
+  vertical-align: middle;
+}
+.slide p, .slideAuto p{
+  position: absolute;
+  left: 100%;
+  right:10%;
+  top:35%;
+  bottom: 35%;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+.prev, .next{
+  position: absolute;
+  top: 40%;
+  font-size: 3em;
+  color: lightgrey;
+  display: inline-block;
+  padding: 0.5em 1em;
+}
+.prev{
+  left:25%
+}
+.next{
+  right:2%
+}
+.prev:hover , .next:hover{
+  background-color: rgba(25,56,180,0.8);
+  color: black;
+}
+  /*container*/
+.container{border:solid gray;
+  width:100%;
+  height:200px;
+  box-shadow: 1px 1px 5px gray;
+  width: 100%
+}
+.title{
+  border:solid red;
+  width: 100%;
+  height:30%;
+}
+.intro{
+  border: solid green;
+  width: 65%;
+  height: 80%;
+  margin-right: 2%;
+  float: left;
+}
+.footer{
+  width: 32%;
+  height: 80%;
+  border: solid blue;
+  float: left;
+}
+/*Cards activity*/
+.mainTitle{
+  text-align: center; color: orange; padding: 2em;
+}
+.cardContainer{
+  width: 100%; display: inline-block; margin: 2em;
+}
+.nav{
+  width: 100%;
+  height: auto;
+}
+.nav a{
+  background-color: orange;
+  width: 32.9%;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: darkblue;
+}
+.nav a:hover{background-color: blue; color: orange;}
+
+.card{
+  box-shadow: 2px 1px 3px gray;
+  width: 20%;
+  margin-left: 1%;
+  height: 100%;
+  float:left;
+}
+.card img{
+  width: 100%;
+  height: 45%;
+}
+.card h3{
+text-align: center;
+padding: 0.5em;
+color: orange;
+}
+.card p{
+  padding: 0.5em;
+}
+@media only screen and (max-width: 800px){
+.container{height:500px;}
+.title{height:8%; font-size: 3em; overflow: hidden; color: purple;}
+.intro{height: 50%; width: 100%;}
+.footer{width: 100%; height: 40%;}
+/*nav*/
+.nav a{
+  width: 32%;
+}
+/*cards*/
+.card{
+  width: 47.5%;
+  margin-top: 2em;
+  margin-left: 2%;
+}
+
+}
+@media only screen and (max-width: 600px) {
+  /*nav*/
+  .nav a{
+    width:100%;
+    margin:0%;
+  }
+  /*cards*/
+  .card{
+    width:80%;
+    margin-left: 90%;
+  }
+}
