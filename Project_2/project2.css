@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+.title{
+  text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; font-size: 2.6em;
+}
+.intro{ font: normal normal bold normal 0.8em Georgia;
+}
+.couch1, .couch2, .couch3, .couch4, .couch5, .couch6{width:20%;
+}
+.nav a:hover{background-color: #e2f1f8; color: #808e95;}
+.nav{
+  width: 100%;
+  height: auto;
+}
+.nav a{
+  background-color: #c1d5e0;
+  width: 32.9%;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #62757f;
+}
+.footer{
+  position:fixed; bottom:0; left:0; right:0; height: 60px;
+}
+.mainTitle{
+  color: #62757f; background-color: #c1d5e0; text-align: center;
+}
+.couches{
+  border: solid 0.3em #62757f ;
+}
+.chairs{
+  border: solid 0.3em #62757f;
+}
