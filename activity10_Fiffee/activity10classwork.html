@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activity 10</title>
+  </head>
+  <body>
+    <!-- example 1-->
+    <p id="one" > Here is some text</p>
+
+      <!-- example 2-->
+      <p>Here is some text 1</p>
+      <p>Here is some text 1</p>
+      <p>Here is some text 1</p>
+
+      <!-- example 3 and 4 and 5-->
+      <div id="special">
+      <p class="name">First Name</p>
+      <p class="name">Last Name</p>
+      <p class="n1">Full Name</p>
+    </div>
+
+    <!-- example 5-->
+
+
+
+      <script type="text/javascript">
+      //ex 5
+      let collectName = document.querySelectorAll('.name')
+      for(let name of collectName){
+        name.styly.padding = '1em'
+        name.style.backgroundColor = 'yellow'
+      }
+      //ex 4
+      let container = document.querySelector('#special')
+      let n1P = document.querySelector('.n1')
+      let pTag = document.querySelector('p.name')
+
+      container.style.backgroundColor = 'lightblue'
+      n1p.style.fontSize = '1.5em'
+      pTag.style.textAlign = 'center'
+      //ex 3
+        let n = document.getElementsByClassName('name')
+        for (let eachName of n){
+          eachName.style.color = 'magenta'
+        }
+      //ex 2
+      let myText = document.getElementsByTagName('p')
+      console.log(myText)
+      //example 1
+      let pOne = document.getElementById('one')
+      pOne.style.color= 'red'
+
+      //example 2
+
+
+
+    </script>
+
+
+  </body>
+</html>
