@@ -1,4 +1,5 @@
 *{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
 .title{
   text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; font-size: 2.6em;
 }
@@ -34,3 +35,42 @@
 .chairs{
   border: solid 0.3em #62757f;
 }
+/*slideshow*/
+.container_slideshow{
+  border: solid blue;
+  width: 80%;
+margin: 2em auto;
+  position: relative;}
+.slide, .slideAuto{
+  width:100%;
+  display: none;
+animation : slideAnimation: 1.2s;}
+@keyframes slideAnimation {
+  0%{transform: translateX(50px); }
+  100%{transform: translateX(0px);}}
+.slide img, .slideAuto img{
+  width: 100%;
+  vertical-align: middle;}
+.slide p, .slideAuto p{
+  position: absolute;
+  left: 100%;
+  right:10%;
+  top:35%;
+  bottom: 35%;
+  text-align: center;
+  font-size: 5em;
+  color: white;}
+.prev, .next{
+  position: absolute;
+  top: 40%;
+  font-size: 3em;
+  color: lightgrey;
+  display: inline-block;
+  padding: 0.5em 1em;}
+.prev{
+  left:25%}
+.next{
+  right:2%}
+.prev:hover , .next:hover{
+  background-color: rgba(25,56,180,0.8);
+  color: black;}
