@@ -17,9 +17,11 @@ html{scroll-behavior: smooth;}
 .chair1, .chair2, .chair3 {width: 15%;}
 
 /*slideshow*/
-.container_slideshow{  border: solid blue;  width: 80%;margin: 2em auto;position: relative;}
+.slideHeader{text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; position: absolute; opacity: 0.75;}
+.slideHead{ }
+.container_slideshow{  border: solid blue;  width: 80%;margin: 2em auto; position: relative; overflow: hidden;}
 .slide, .slideAuto{  width:100%;  display: none;
-animation : slideAnimation: 1.2s;}
+animation : slideAnimation: 1.2s ;}
 @keyframes slideAnimation {0%{transform: translateX(50px); } 100%{transform: translateX(0px);}}
 
 .slide img, .slideAuto img{
