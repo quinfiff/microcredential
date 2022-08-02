@@ -4,7 +4,9 @@
 }
 .intro{ font: normal normal bold normal 0.8em Georgia;
 }
-.couch1, .couch2, .couch3, .couch4, .couch5, .couch6{width:20%;
+.couch1, .couch2, .couch3 {width:20%;
+}
+.chair1, .chair2, .chair3 {width: 15%;
 }
 .nav a:hover{background-color: #e2f1f8; color: #808e95;}
 .nav{
