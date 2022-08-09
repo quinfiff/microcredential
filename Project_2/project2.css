@@ -3,9 +3,9 @@ html{scroll-behavior: smooth;}
 /*header and navigation*/
 .title{ text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; font-size: 2.8em;}
 .intro{ font: normal normal bold normal 0.8em Georgia;}
-.nav a:hover{background-color: lightgrey/*#4fb3bf*/; color: #005662;}
+.nav a:hover{background-color: lightgrey; color: #005662;}
 .nav{  width: 100%;  height: auto;}
-.nav a{  background-color: #c1d5e0;  width: 32.9%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
+.nav a{  background-color: #c1d5e0;  width: 24.8%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
 
 /*titles and paragraphs*/
 .mainTitle{color: #62757f; background-color: #c1d5e0; text-align: center; font-size: 2.4em; padding: 2em 2em 2em 2em; }
@@ -13,14 +13,19 @@ html{scroll-behavior: smooth;}
 
 
 /* couch formatting*/
-.couch_container{border: solid white; width: 100%; display: inline-block; margin-top: 2em; margin-bottom: 2em;} /*could use float left or inline block*/
-.couch {width:28%;  margin-left: 2.5%; float: left;}
+.couch_container{border: solid white; width: 100%; display: inline-block; margin-top: 5em; margin-bottom: 2em;} /*could use float left or inline block*/
+.couch {width:28%;  margin-left: 3%; float: left; }
 .img1{height: 140%;}
 .couch h3{ text-align: center; color: #62757f; background-color: #c1d5e0; }
 
 #item1{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
 #item1:hover{background-color: lightblue;}
-.modalWindow{ background-color: rgba(50,50,50,0.60) ; position:fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
+
+#item2{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item2:hover{background-color: lightblue;}
+
+
+.modalWindow{ background-color: rgba(50,60,70,0.60) ; position:fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
 .modalBody{width: 60%; margin: 5% auto; background-color: lightgrey; color:#005662; height: 500px; padding: 0% 0.6; font-family: Optima;}
 .modalHeader{height: 10%; background-color: #c1d5e0;}
 .modalInfo{height: 60%; text-align: center;}
@@ -29,7 +34,7 @@ html{scroll-behavior: smooth;}
 
 /*chair formatting*/
 .chair_container{border: solid white; width: 100%; display: inline-block; margin-top: 10%}
-.chair {width:30%;  margin-left: 1%; float: left;}
+.chair {width:20%;  margin-left: 10%; float: left;}
 .chair img{ width: 100%; width: 100%;}
 .chair h3{ text-align: center; color: #62757f; background-color: #c1d5e0; }
 
@@ -50,7 +55,9 @@ animation : slideAnimation: 1.2s ;}
 .slide p, .slideAuto p{  position: absolute;  left: 100%;  right:10%;  top:35%;  bottom: 35%;  text-align: center;  font-size: 5em;  color: white;}
 .prev, .next{  position: absolute;  top: 40%;  font-size: 3em;  color: lightgrey;  display: inline-block;  padding: 0.5em 1em;}
 
-
+/*customer forms*/
+.customer{ text-align: center;}
+.selection{background-color: lightgrey; text-align: center;}
 
 /*footer*/
 .footer{ background-color: #e2f1f8; height: 40px;}

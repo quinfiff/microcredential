@@ -1,3 +1,17 @@
+// storage
+const firstName = document.querySelector('#firstN').value
+const lastName = document.querySelector('#lastN').value
+const submitForm = document.querySelector('.input1')
+
+submitForm.addEventListener('click', function(){
+  localStorage.setItem('FN', firstName);
+  sessionStorage('LN', lastName);
+})
+
+
+//forms
+
+
 //modal modalWindow
 const item1 = document.querySelector('#item1')
 const closeModal = document.querySelector('#closeModal')
@@ -10,7 +24,17 @@ closeModal.addEventListener('click', function(){
   modalWindow.style.display = 'none';
 })
 
+//modal 2
+/*const item2 = document.querySelector('#item2')
+const closeModal2 = document.querySelector('#closeModal2')
+const modalWindow = document.querySelector('.modalWindow')
 
+item2.addEventListener('click', function(){
+  modalWindow.style.display = 'block';
+})
+closeModal2.addEventListener('click', function(){
+  modalWindow.style.display = 'none';
+})*/
 
 //automatic slideshow
 const slideAuto = document.querySelectorAll('.slideAuto')
