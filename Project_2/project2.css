@@ -1,25 +1,44 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 /*header and navigation*/
-.title{ text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; font-size: 2.6em;}
+.title{ text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; font-size: 2.8em;}
 .intro{ font: normal normal bold normal 0.8em Georgia;}
-
-.nav a:hover{background-color: #e2f1f8; color: #808e95;}
+.nav a:hover{background-color: lightgrey/*#4fb3bf*/; color: #005662;}
 .nav{  width: 100%;  height: auto;}
 .nav a{  background-color: #c1d5e0;  width: 32.9%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
-.footer{  position:fixed; bottom:0; left:0; right:0; height: 60px;}
-.mainTitle{color: #62757f; background-color: #c1d5e0; text-align: center;}
 
-/* couch and chair images*/
-.couches{border: solid 0.3em #62757f ;}
-.chairs{border: solid 0.3em #62757f;}
-.couch1, .couch2, .couch3 {width:20%;}
-.chair1, .chair2, .chair3 {width: 15%;}
+/*titles and paragraphs*/
+.mainTitle{color: #62757f; background-color: #c1d5e0; text-align: center; font-size: 2.4em; padding: 2em 2em 2em 2em; }
+.Blurb{background-color: lightgrey; color: #005662; text-align: center; font-size: 1.4em; align-content: center; margin-left: auto; margin-right: auto; width: 90%; margin-top: 0em;}
+
+
+/* couch formatting*/
+.couch_container{border: solid white; width: 100%; display: inline-block; margin-top: 2em; margin-bottom: 2em;} /*could use float left or inline block*/
+.couch {width:28%;  margin-left: 2.5%; float: left;}
+.img1{height: 140%;}
+.couch h3{ text-align: center; color: #62757f; background-color: #c1d5e0; }
+
+#item1{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item1:hover{background-color: lightblue;}
+.modalWindow{ background-color: rgba(50,50,50,0.60) ; position:fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
+.modalBody{width: 60%; margin: 5% auto; background-color: lightgrey; color:#005662; height: 500px; padding: 0% 0.6; font-family: Optima;}
+.modalHeader{height: 10%; background-color: #c1d5e0;}
+.modalInfo{height: 60%; text-align: center;}
+.modalFooter{height: 20%; background-color:#c1d5e0; padding: 0.5em;text-align: center;}
+.p{padding: 0.5em 0.5em 0.5em 0.5em;}
+
+/*chair formatting*/
+.chair_container{border: solid white; width: 100%; display: inline-block; margin-top: 10%}
+.chair {width:30%;  margin-left: 1%; float: left;}
+.chair img{ width: 100%; width: 100%;}
+.chair h3{ text-align: center; color: #62757f; background-color: #c1d5e0; }
+
+
 
 /*slideshow*/
-.slideHeader{text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; position: absolute; opacity: 0.75;}
+.slideHeader{text-align: center; color: #62757f; background-color: #c1d5e0; padding: 50px 10px 50px 10px; font-family: Georgia; position: absolute; opacity: 0.75; right:80px; left: 100px;}
 .slideHead{ }
-.container_slideshow{  border: solid blue;  width: 80%;margin: 2em auto; position: relative; overflow: hidden;}
+.container_slideshow{   width: 80%;margin: 2em auto; position: relative; overflow: hidden;}
 .slide, .slideAuto{  width:100%;  display: none;
 animation : slideAnimation: 1.2s ;}
 @keyframes slideAnimation {0%{transform: translateX(50px); } 100%{transform: translateX(0px);}}
@@ -30,6 +49,11 @@ animation : slideAnimation: 1.2s ;}
 
 .slide p, .slideAuto p{  position: absolute;  left: 100%;  right:10%;  top:35%;  bottom: 35%;  text-align: center;  font-size: 5em;  color: white;}
 .prev, .next{  position: absolute;  top: 40%;  font-size: 3em;  color: lightgrey;  display: inline-block;  padding: 0.5em 1em;}
-.prev{left:25%}
-.next{right:2%}
-.prev:hover , .next:hover{  background-color: rgba(25,56,180,0.8);  color: black;}
+
+
+
+/*footer*/
+.footer{ background-color: #e2f1f8; height: 40px;}
+.footer-img{ background-color: #e2f1f8; padding: 20px 20px 20px 680px}
+.contact{font-family: Georgia; text-align: center; font-size: 1.2em; color: #62757f; }
+.twitter{align-items: center;}
