@@ -5,17 +5,18 @@ html{scroll-behavior: smooth;}
 .intro{ font: normal normal bold normal 0.8em Georgia;}
 .nav a:hover{background-color: lightgrey; color: #005662;}
 .nav{  width: 100%;  height: auto;}
-.nav a{  background-color: #c1d5e0;  width: 24.8%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
+.nav a{  background-color: #c1d5e0;  width: 24.5%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
 
 /*titles and paragraphs*/
 .mainTitle{color: #62757f; background-color: #c1d5e0; text-align: center; font-size: 2.4em; padding: 2em 2em 2em 2em; }
-.Blurb{background-color: lightgrey; color: #005662; text-align: center; font-size: 1.4em; align-content: center; margin-left: auto; margin-right: auto; width: 90%; margin-top: 0em;}
+.Blurb{background-color: lightgrey; color: #005662; text-align: center; font-size: 1em; align-content: center; margin-left: auto; margin-right: auto; width: 100%; margin-top: 0em; font-family: Georgia; padding: 2em 2em 2em 2em;}
 
 
 /* couch formatting*/
 .couch_container{border: solid white; width: 100%; display: inline-block; margin-top: 5em; margin-bottom: 2em;} /*could use float left or inline block*/
 .couch {width:28%;  margin-left: 3%; float: left; }
 .img1{height: 140%;}
+.couch img{width: 100%;}
 .couch h3{ text-align: center; color: #62757f; background-color: #c1d5e0; }
 
 #item1{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
@@ -24,8 +25,19 @@ html{scroll-behavior: smooth;}
 #item2{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
 #item2:hover{background-color: lightblue;}
 
+#item3{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item3:hover{background-color: lightblue;}
 
-.modalWindow{ background-color: rgba(50,60,70,0.60) ; position:fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
+#item4{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item4:hover{background-color: lightblue;}
+
+#item5{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item5:hover{background-color: lightblue;}
+
+#item6{display: block; padding: 0.5em; background-color: lightgrey; color: #005662; text-align: center;}
+#item6:hover{background-color: lightblue;}
+
+.modalWindow, .modalWindow2, .modalWindow3, .modalWindow4, .modalWindow5, .modalWindow6 { background-color: rgba(50,60,70,0.60) ; position:fixed; top: 0%; bottom: 0%; left: 0%; right: 0%; display: none;}
 .modalBody{width: 60%; margin: 5% auto; background-color: lightgrey; color:#005662; height: 500px; padding: 0% 0.6; font-family: Optima;}
 .modalHeader{height: 10%; background-color: #c1d5e0;}
 .modalInfo{height: 60%; text-align: center;}
@@ -60,7 +72,16 @@ animation : slideAnimation: 1.2s ;}
 .selection{background-color: lightgrey; text-align: center;}
 
 /*footer*/
-.footer{ background-color: #e2f1f8; height: 40px;}
+.footer { background-color: #e2f1f8; height: 40px;}
 .footer-img{ background-color: #e2f1f8; padding: 20px 20px 20px 680px}
 .contact{font-family: Georgia; text-align: center; font-size: 1.2em; color: #62757f; }
 .twitter{align-items: center;}
+
+/*media query*/
+@media only screen and (max-width: 1300px){
+.nav{ width: 100%;  height: auto;}
+.nav a{  background-color: #c1d5e0;  width: 100%;  padding: 1em;  display: inline-block;  text-align: center;text-decoration: none;color: #62757f;}
+.title, .mainTitle {font-size: 1.8em;}
+.Blurb {font-size: 0.8em; text-align: left;}
+.couch {width: 30%; overflow: hidden; float: right;}
+}
